@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ai-dev-mentor-backend
+    env: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: ADMIN_SECRET
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "https://your-app.vercel.app"
