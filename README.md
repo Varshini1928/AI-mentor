@@ -1,5 +1,5 @@
 # AI Dev Mentor
-
+ 
 An AI-powered coding assistant that generates code, reviews it, and helps debug errors —
 with review quality boosted by a lightweight RAG pipeline grounded in your own uploaded
 project files.
